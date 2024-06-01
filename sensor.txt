@@ -1,0 +1,13 @@
+ Sensor : É um atributo que pode ser adicionado no colisor, que pode ser usado para detectar quando um colisor entra ou sai de outro colisor alterando o atributo do sensor para verdadeiro
+
+
+<RigidBody type="fixed" position={[0, 0.175, -5]}>
+          <CuboidCollider args={[1, 1, 1]} 
+   	  sensor // A esfera será capaz de passar pelo colisor cubóide/cubo
+          onIntersectionEnter={() = console.log("in")} // Este evento solicita uma função que será chamada quando a esfera estiver no colisor cubóide.
+          onIntersectionExit={() = console.log("out")} // Este evento também solicita uma função que será chamada quando a esfera sair do colisor cubóide.
+
+          />
+        </RigidBody>
+
+O que vamos fazer é exibir ou ocultar o texto 3D condicionalmente.
